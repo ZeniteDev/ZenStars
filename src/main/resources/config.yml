@@ -1,0 +1,73 @@
+MESSAGES:
+  ConsoleError: "&cŠi komanda gali būti naudojama tik iš serverio!"
+  StarSet: " &8» &fSėkmingai užsidėjote žvaigždę."
+  StarRemoved: " &8» &fSėkmingai nusiėmėte žvaigždę."
+BUTTONS:
+  ClosePageItem: "SUNFLOWER"
+  ClosePageName: "&4&lUždaryti"
+  FillerName: "&r"
+MenuTitle: "&c&lŽvaigdžių pasirinkimas"
+UnknownStar:
+  Item: "BARRIER"
+  Name: "&cUŽRAKINTA ŽVAIGŽDĖ"
+  Lore:
+    - "&8» &7Ši žvaigždė užrakinta. Ją turite"
+    - "&7  gauti atliktdami tam tikrus veiksmus."
+    - "&8» &7Kaip gauti %symbol% žvaigždę? Naudokite &8:"
+    - "&2  /zvaigzde"
+MENU:
+  GOLDEN_STAR:
+    Slot: 19
+    Item: "YELLOW_DYE"
+    Name: "&6Auksinė žvaigždė"
+    Lore:
+      - "&7Spauskite kairį, kad užsidėti."
+      - "&7Spauskite dešinį, kad nusiimti."
+    Permission: "zvaigzde.golden"
+  GREEN_STAR:
+    Slot: 20
+    Item: "GREEN_DYE"
+    Name: "&2Žalia žvaigždė"
+    Lore:
+      - "&7Spauskite kairį, kad užsidėti."
+      - "&7Spauskite dešinį, kad nusiimti."
+    Permission: "zvaigzde.green"
+  RED_STAR:
+    Slot: 21
+    Item: "RED_DYE"
+    Name: "&4Raudona žvaigždė"
+    Lore:
+      - "&7Spauskite kairį, kad užsidėti."
+      - "&7Spauskite dešinį, kad nusiimti."
+    Permission: "zvaigzde.red"
+  CYAN_STAR:
+    Slot: 22
+    Item: "CYAN_DYE"
+    Name: "&3Žydra žvaigždė"
+    Lore:
+      - "&7Spauskite kairį, kad užsidėti."
+      - "&7Spauskite dešinį, kad nusiimti."
+    Permission: "zvaigzde.cyan"
+  PURPLE_STAR:
+    Slot: 23
+    Item: "PURPLE_DYE"
+    Name: "&5Violetinė žvaigždė"
+    Lore:
+      - "&7Spauskite kairį, kad užsidėti."
+      - "&7Spauskite dešinį, kad nusiimti."
+    Permission: "zvaigzde.purple"
+  WHITE_STAR:
+    Slot: 24
+    Item: "WHITE_DYE"
+    Name: "&fBalta žvaigždė"
+    Lore:
+      - "&7Spauskite kairį, kad užsidėti."
+      - "&7Spauskite dešinį, kad nusiimti."
+    Permission: "zvaigzde.white"
+  BLACK_STAR:
+    Slot: 25
+    Item: "BLACK_DYE"
+    Name: "&0Juoda žvaigždė"
+    Lore:
+      - "&7Spauskite dešinį, kad nusiimti."
+    Permission: "zvaigzde.black"

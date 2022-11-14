@@ -1,0 +1,11 @@
+name: ZenStars
+version: '${project.version}'
+main: me.zendev.zenstars.ZenStars
+api-version: 1.16
+authors: [ ZenDev ]
+description: Stars plugin for MC.BLAZE.LT server.
+commands:
+  zvaigzde:
+    description: Žvaigždžių meniu.
+    aliases: [zvaigzdes, zvaigzdute]
+    usage: /zvaigzde
