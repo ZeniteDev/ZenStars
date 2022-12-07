@@ -10,6 +10,7 @@ import net.luckperms.api.LuckPermsProvider;
 import net.luckperms.api.model.user.User;
 import net.luckperms.api.node.Node;
 import net.luckperms.api.node.ScopedNode;
+import net.luckperms.api.node.types.PermissionNode;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
@@ -35,6 +36,11 @@ public class Utilities {
 
     public void setPermission(User user, String permission, Boolean value) {
         ScopedNode scopedNode = Node.builder(permission).value(value).build();
+
+        luckPerms.getUserManager().modifyUser(user.getUniqueId(), u -> {
+
+        });
+
         user.data().add(scopedNode);
         luckPerms.getUserManager().saveUser(user);
     }

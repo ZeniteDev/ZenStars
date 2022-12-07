@@ -26,9 +26,15 @@ public class StarCommand implements CommandExecutor {
             Player player = (Player) sender;
 
             for (String key : plugin.config.getConfig().getConfigurationSection("MENU.").getKeys(false)) {
-                if (player.hasPermission(plugin.variables.getStarPermission(key))) {
-                    plugin.data.getConfig().set(player.getName() + "." + key, true);
-                } else {
+                if (!plugin.data.getConfig().contains(player.getName())) {
+                    if (player.hasPermission(plugin.variables.getStarPermission(key))) {
+                        plugin.data.getConfig().set(player.getName() + "." + key, true);
+                    } else {
+                        plugin.data.getConfig().set(player.getName() + "." + key, false);
+                    }
+                }
+                
+                if (!plugin.data.getConfig().contains(player.getName() + "." + key)) {
                     plugin.data.getConfig().set(player.getName() + "." + key, false);
                 }
             }
